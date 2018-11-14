@@ -9,12 +9,12 @@ double duration1, duration2;
 
 int main(void)
 {
-    int ii = 32767;
+    int ii = 30000;
 
     start = clock();
     PrintN(ii);
     stop = clock();
-    duration1 = ((double) (stop - start)) / CLK_TCK;
+    duration1 = ((double) (stop - start))  / CLK_TCK;
     
     start = clock();
     PrintN_1(ii);
