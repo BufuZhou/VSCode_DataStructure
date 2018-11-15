@@ -1,5 +1,32 @@
+#ifndef _METHODS_C
+#define _METHODS_C
+
+#include "varincludes.h"
+
+// 打印数字
+void PrintN(int N)
+{
+    int i;
+    for(i = 1; i <= N; i++)
+    {
+        printf("%d\n", i);
+    }
+    return ;
+}
+
+void PrintN_1(int N)
+{
+    if(N)
+    {
+        PrintN(N - 1);
+        printf("%d\n", N);
+    }
+    return ;
+}
 
 
+
+// 最大子序列之和问题
 int MaxSubseqSum1(int A[], int N)
 {
     int ThisSum, MaxSum = 0;
@@ -107,3 +134,6 @@ int MaxSubseqSum4(int A[], int N)
     }
     return MaxSum;
 }
+
+
+#endif //#ifndef _METHODS_C
